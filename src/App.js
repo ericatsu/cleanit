@@ -1,10 +1,14 @@
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
+import Home from './pages/Home';
 
 function App() {
    
 
   return (
-    <div>Hello</div>
+    <Router>
+       <Home/>
+    </Router>
   );
 }
 
