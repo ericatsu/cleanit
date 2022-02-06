@@ -26,7 +26,7 @@ const NavBar = ( {toggle} ) => {
 
     return(
      <>
-    <IconContext.Provider value={{color: '#ffff'}}>
+    <IconContext.Provider value={{color: '#ffffff'}}>
      <Nav scrollNav={scrollNav}>
         <NavBarContainter>
         <NavLogo to="/" onClick={toggleHome}>CleanIt</NavLogo>
@@ -60,7 +60,7 @@ const NavBar = ( {toggle} ) => {
                 exact='true' offset={-80}>FAQs</NavLinks>
             </NavItem>
             <NavItem>
-                <NavResume to="LearnMore" smooth={true}
+                <NavResume to="Member" smooth={true}
                 duration={500} spy={true}
                 exact='true' offset={-80}>Members</NavResume>
             </NavItem>

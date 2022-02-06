@@ -24,7 +24,7 @@ const Hero = () => {
                    with the best customer service in the country.
                 </HeroP>
                 <HeroBtnWrapper>
-                    <Button to='FormPopUp' onMouseEnter={onHover} onMouseLeave={onHover}
+                    <Button to='LearnNow' onMouseEnter={onHover} onMouseLeave={onHover}
                         primary='true' dark='true' smooth={true}
                         duration={500} spy={true}
                         exact='true' offset={-80}

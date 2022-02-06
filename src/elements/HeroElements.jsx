@@ -49,7 +49,7 @@ export const HeroContent = styled.div`
  padding: 8px 24px;
  display: flex;
  flex-direction: column;
- align-items: center;
+ align-items: left;
 `
 
 export const HeroH1 = styled.h1`

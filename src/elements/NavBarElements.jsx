@@ -36,7 +36,7 @@ export const NavLogo = styled(LinkR)`
     font-size: 1.5rem;
     display: flex;
     align-items: center;
-    margin-left: 24px;
+    margin-left: 10px;
     font-weight: bold;
     text-decoration: none;
 `;
@@ -61,7 +61,7 @@ export const NavMenu = styled.ul`
    align-items: center;
    list-style: none;
    text-align: center;
-   margin-right: -70px;
+   margin-right: -120px;
 
    @media screen and (max-width: 769px) {
        display: none;
@@ -110,7 +110,7 @@ export const NavBtn = styled.nav`
 
 export const NavBtnLink = styled(LinkR)`
   border-radius: 50px;
-  background: #01bf71;
+  background: #7fe2f3;
   white-space: nowrap;
   padding: 10px 22px;
   color: #010606;
