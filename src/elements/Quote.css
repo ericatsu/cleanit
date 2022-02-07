@@ -1,4 +1,4 @@
-.whiteDiv{
+.whiteDivQuote{
    padding: 40px 0 150px 0;
    color: #fff;
    background: linear-gradient(108deg, rgb(87, 209, 247) 0%,
@@ -132,3 +132,32 @@
     display: table;
     clear: both;
 }
+
+.QuoteBtn{
+ display: flex;
+ align-items: center;
+
+ @media screen and (max-width: 768px) {
+     display: none;
+ }
+}
+
+.QuoteBtnLink{
+    border-radius: 50px;
+    background: #ffffff;
+    white-space: nowrap;
+    padding: 10px 22px;
+    color: #010606;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+.QuoteBtnLink:hover {
+        transition: all 0.2s ease-in-out;
+        background: #fff;
+        color: #010606;
+ }

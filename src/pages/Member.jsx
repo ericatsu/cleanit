@@ -1,17 +1,40 @@
 import React from 'react';
+import { MemberContainer, Image, MemberH1, Slogan, MemberRow, MemberColumn, MemberH2, MemberP } from '../elements/MemberElements'
 
 function Member() {
   return (
-   <div className='whiteDiv'>
-    <div className="member_container">
-        <h1 className="caption">Why You Should Be A Member</h1>
-        <h1 className="slogan">BEING A MEMBER CAN PROVIDE SO MANY BENEFITS</h1>
-        <div className="reason">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, numquam reprehenderit. Hic culpa facere aperiam.</div>
-        <div className="member_row">
-            
-        </div>
-    </div>
-   </div>
+   <MemberContainer>
+        <Image src="" alt="" className="image" />
+        <MemberH1>CleanIt Service Limited</MemberH1>
+        <Slogan>
+            CUSTOMER SATISFACTION IS THE FOUNDATION OF ANY SUCCESSFUL BUSINESS
+        </Slogan>
+        <MemberRow>
+            <MemberColumn>
+             <MemberH2>ABOUT US</MemberH2>
+             <MemberP>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit minima molestias autem, illo quo labore.</MemberP>
+             <MemberP>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit minima molestias autem, illo quo labore.</MemberP>
+             <MemberH2>WHAT WE OFFER</MemberH2>
+             <MemberP>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit minima molestias autem, illo quo labore.</MemberP>
+             <MemberP>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit minima molestias autem, illo quo labore.</MemberP>
+             <MemberH2>WHAT WE OFFER</MemberH2>
+             <MemberP>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit minima molestias autem, illo quo labore.</MemberP>
+             <MemberP>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit minima molestias autem, illo quo labore.</MemberP>
+            </MemberColumn>
+            <div className="col-sm-6">
+             <MemberH2>ABOUT US</MemberH2>
+             <MemberP>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit minima molestias autem, illo quo labore.</MemberP>
+             <MemberP>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit minima molestias autem, illo quo labore.</MemberP>
+             <MemberH2>WHAT WE OFFER</MemberH2>
+             <MemberP>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit minima molestias autem, illo quo labore.</MemberP>
+             <MemberP>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit minima molestias autem, illo quo labore.</MemberP>
+             <MemberH2>WHAT WE OFFER</MemberH2>
+             <MemberP>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit minima molestias autem, illo quo labore.</MemberP>
+             <MemberP>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit minima molestias autem, illo quo labore.</MemberP>
+            </div>
+            <div className="textcolumn"></div>
+        </MemberRow>
+      </MemberContainer>
    );
 }
 

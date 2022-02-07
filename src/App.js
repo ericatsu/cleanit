@@ -27,7 +27,7 @@ function App() {
           <Route  path="LearnMore"  element={<LearnMore/>} />
           <Route  path="Member"  element={<Member/>} />
         </Routes>
-        <Footer/>
+      <Footer/>
     </Router>
   );
 }

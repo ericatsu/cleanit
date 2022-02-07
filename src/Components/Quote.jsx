@@ -3,7 +3,7 @@ import '../elements/Quote.css'
 
 function Quote() {
   return (
-    <div className="whiteDiv">
+    <div className="whiteDivQuote">
   <div className="container">
       <div className="heading">
           <h1>How May we help You</h1>
@@ -42,9 +42,9 @@ function Quote() {
     </div>
   </div>
 
-  <div className="Form-buttonContainer">
-        <button className="Form-button">Submit</button>
-    </div>
+  <div className="QuoteBtn">
+        <button to='/' className="QuoteBtnLink">Submit</button>
+  </div>
 
 </form>
   </div>
