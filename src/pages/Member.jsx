@@ -12,8 +12,8 @@ function Member() {
         <MemberRow>
             <MemberColumn>
              <MemberH2>ABOUT US</MemberH2>
-             <MemberP>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit minima molestias autem, illo quo labore.</MemberP>
-             <MemberP>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit minima molestias autem, illo quo labore.</MemberP>
+             <MemberP>CleanIt Service is a guarented to become the one best cleaning industry in country. We priotize to meet our clients highest standards. Due to our dedicated team of trained specialists, we value each and every client. We never give up on any stain and we train only the best personnel.</MemberP>
+             {/* <MemberP>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit minima molestias autem, illo quo labore.</MemberP> */}
              <MemberH2>WHAT WE OFFER</MemberH2>
              <MemberP>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit minima molestias autem, illo quo labore.</MemberP>
              <MemberP>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit minima molestias autem, illo quo labore.</MemberP>
