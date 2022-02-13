@@ -14,7 +14,6 @@ function Home() {
       <Hero/>
       <About {...homeObjOne}/>
       <Services/>
-      {/* <FaqsList/> */}
       <Quote/>
       </>
   );

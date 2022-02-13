@@ -6,7 +6,7 @@ export const MemberContainer = styled.div`
     text-align: center;
     display: block;
     padding: 40px 0;
-    margin: 15px;
+    margin: 30px;
 
     &:after, :before{
         -webkit-box-sizing: border-box;
