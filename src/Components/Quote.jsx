@@ -1,9 +1,10 @@
 import React from 'react';
-import '../elements/Quote.css'
+import '../elements/Quote.css';
+import  contactImg  from '../assets/images/contactImg.png';
 
 function Quote() {
   return (
-    <div className="whiteDivQuote">
+  <div className="whiteDivQuote">
   <div className="container">
       <div className="heading">
           <h1>How May we help You</h1>
@@ -14,6 +15,10 @@ function Quote() {
       </div>
       <div className="telNum">
         <a href="tel:050-044-8184" className="nowrap">050-044-8184</a>
+      </div>
+      <img src={contactImg} alt='Call or Fill Up a form'></img>
+      <div className="slogan">
+
       </div>
   <form className="Form" action='#'>
     <div className="Form-sections">

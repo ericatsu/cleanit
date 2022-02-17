@@ -1,9 +1,14 @@
 .whiteDivQuote{
    padding: 40px 0 150px 0;
    color: #fff;
-   background: linear-gradient(108deg, rgb(87, 209, 247) 0%,
+   background: linear-gradient(108deg, rgb(148, 219, 243) 0%,
        rgb(252, 253, 253) 100%);
+
+    @media screen and (max-width: 767px){
+        padding: 40px 0;
+    }
 }
+
 .container{
     padding-right: 15px;
     padding-left: 15px;
@@ -11,13 +16,22 @@
     margin-left: auto;
     text-align: center;
 
-    @media (min-width: 768px) .container {
+    @media (min-width: 992px){
+        width: 970px;
+    }
+
+    @media (min-width: 768px) {
         width: 750px;
     }
 }
 
+.container::before{
+    display: table;
+    content: " ";
+}
+
 .heading{
-    font-size: 20px;
+    font-size: 30px;
     line-height: 105px;
 
     @media screen and (max-width: 1199px) {
