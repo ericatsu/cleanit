@@ -9,10 +9,11 @@ export const Nav = styled.nav`
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1rem;
+    font-size: 1.2rem;
     position: sticky;
     top: 0;
     z-index: 10;
+    width: 100vw;
 
     @media screen and (max-width: 960px) {
         transition: 0.8s all ease;
@@ -33,10 +34,10 @@ export const NavLogo = styled(LinkR)`
     color: #fff;
     justify-self: flex-start;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 2rem;
     display: flex;
     align-items: center;
-    margin-left: 10px;
+    /* margin-left: 10px; */
     font-weight: bold;
     text-decoration: none;
 `;
@@ -61,7 +62,8 @@ export const NavMenu = styled.ul`
    align-items: center;
    list-style: none;
    text-align: center;
-   margin-right: -120px;
+   margin-right: -50px;
+   
 
    @media screen and (max-width: 769px) {
        display: none;
@@ -76,7 +78,7 @@ export const NavLinks = styled(LinkS)`
    align-items: center;
    text-align: none;
    text-decoration: none;
-   padding: 0 1rem;
+   padding: 0.5rem 1rem;
    height: 100%;
    cursor: pointer;
 
@@ -102,6 +104,10 @@ export const NavResume = styled(LinkR)`
 export const NavBtn = styled.nav`
   display: flex;
   align-items: center;
+  padding: 8px 10px;
+  margin-right: -20px;
+
+  
 
   @media screen and (max-width: 768px){
       display: none;
@@ -109,10 +115,10 @@ export const NavBtn = styled.nav`
 `
 
 export const NavBtnLink = styled(LinkR)`
-  border-radius: 50px;
+  border-radius: 6px;
   background: #7fe2f3;
   white-space: nowrap;
-  padding: 10px 22px;
+  padding: 15px 32px;
   color: #010606;
   font-size: 16px;
   outline: none;

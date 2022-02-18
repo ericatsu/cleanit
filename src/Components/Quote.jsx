@@ -42,7 +42,7 @@ function Quote() {
 
     <div className="Form-section">
       <div className="Form-field">
-        <input className="Form-input" type="text" name="name" placeholder="Comment / Service"/>
+        <textarea className="Form-textarea" type="text" name="name" placeholder="Comment / Service"/>
       </div>
     </div>
   </div>
