@@ -24,8 +24,8 @@ function App() {
       <NavBar toggle={toggle}/>
        <Switch>
           <Route  exact path="/" component={Home} />
-          <Route  path="LearnMore"  element={<LearnMore/>} />
-          <Route  path="Member"  element={<Member/>} />
+          <Route exact path="/LearnMore"  component={LearnMore} />
+          <Route exact path="/Member"  component={Member} />
         </Switch>
       <Footer/>
     </Router>

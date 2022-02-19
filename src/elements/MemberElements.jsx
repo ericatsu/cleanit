@@ -7,27 +7,14 @@ export const MemberContainer = styled.div`
     display: block;
     padding: 40px 0;
     margin: 30px;
+    flex-direction: column;
 
-    &:after, :before{
+    
+    /* &:after, :before{
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
-    }
-`
+    } */
 
-export const MemberSub = styled.div`
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    
-
-    @media (min-width: 992px){
-    width: 970px;
-    }
-
-    @media (min-width: 768px){
-    width: 750px;
-    }
 `
 
 export const Image = styled.img`
@@ -45,6 +32,10 @@ export const MemberH1 = styled.h1`
     text-transform: none;
     font-weight: 400;
     font-size: 50px;
+
+    @media screen and (max-width: 400px){
+        font-size: 40px;
+    }
 `
 
 export const Slogan = styled.h1`
@@ -55,48 +46,55 @@ export const Slogan = styled.h1`
 `
 
 export const MemberRow = styled.div`
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
   text-align: left;
+
+  @media (min-width: 768px) {
+    width: 100%;
+}
 `
 
-export const MemberColumnRight = styled.div`
+export const MemberColumn = styled.div`
     display: flex;
     flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
-    padding-right: 50px;
+    justify-content: flex-start;
+    grid-gap: 1rem;
     float: left;
-    padding-right: 50px;
 `
 
-export const MemberColumnLeft = styled.div`
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
-    padding-right: 50px;
-    background-color: blue;
-    float: left;
-    padding-left: 50px;
-
-    @media screen and (min-width: 768px){
-    width: 50%;
-    float: left;
-    position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    }
+export const MemberDescription = styled.div`
+    padding: 25px;
 `
+// export const MemberColumnLeft = styled.div`
+//     display: flex;
+//     flex-direction: column;
+//     flex-basis: 100%;
+//     flex: 1;
+//     padding-right: 50px;
+//     background-color: blue;
+//     float: left;
+//     padding-left: 50px;
+
+//     @media screen and (min-width: 768px){
+//     width: 50%;
+//     float: left;
+//     position: relative;
+//     min-height: 1px;
+//     padding-right: 15px;
+//     }
+// `
 
 export const MemberH2 = styled.h2`
     text-transform: none;
     font-size: 26px;
     margin: 15px 0 10px 0;
-    color: ##75adee;
+    color: #75adee;
 `
+
 export const MemberP = styled.p`
     padding: 0;
     margin-top: 1em;
@@ -104,11 +102,24 @@ export const MemberP = styled.p`
     line-height: 1.5;
     margin: 3px 0 10px 0;
     font-size: 16px;
-    color: ##03274d;
+    color: #03274d;
+
+    &::before{
+     content: "+";
+     position: relative;
+     top: 0;
+     left: 0;
+    }
 `
 
 export const FormContainer = styled.div`
-  margin-bottom: 20px;
+   height: 100%;
+   flex-direction: column;
+   padding: 25px;
+
+   @media screen and (max-width: 400px){
+     height: 80%;
+ }
   `
 
 export const Request = styled.h2`
@@ -116,7 +127,11 @@ export const Request = styled.h2`
   text-align: center;
   max-width: 100%;
   height: auto;
-  font-size: 26px;
+  font-size: 1.5rem;
+
+  @media screen and (max-width: 480px){
+      font-size: 1rem;
+  }
 `;
 
 export const InputContainer = styled.form`
@@ -130,9 +145,8 @@ export const InputContainer = styled.form`
   position: relative;
 `
 export const Input = styled.input`
-    border-color: #cbd5df;
     color: #7e96ae;
-    border: #fff 1px solid;
+    border: #000000 1px solid;
     outline: none!important;
     background: transparent;
     width: 35vw;
@@ -147,9 +161,9 @@ export const TextArea = styled.textarea`
     padding-top: 10px;
     width: 35vw;
     margin: 10px auto;
-    border-color: #cbd5df;
     color: #7e96ae;
-    border: #fff 1px solid;
+    border: #000000 1px solid;
+    border-radius: 3px;
     outline: none!important;
     background: transparent;
 `
@@ -166,7 +180,7 @@ export const Button = styled.button`
   height: 75px;
   width: 35vw;
   display: inline-block;
-  border-radius: 20px;
+  border-radius: 15px;
   color: #fff;
   text-align: center;
   font-weight: 300;
@@ -175,7 +189,6 @@ export const Button = styled.button`
   margin: 10px auto;;
   cursor: pointer;
   border: none;
-  -webkit-appearance: none;
    background: linear-gradient(to bottom,#419efe 50%,#328fef 51%);
 `;
 
@@ -184,20 +197,18 @@ export const CautionContainer = styled.div`
     font-style: italic;
     font-size: 15px;
     line-height: 17px;
-    margin-left: 15px;
-    
+    width: 39vw;
+    margin-left: 60px;
 
     @media screen and (max-width: 991px) {
     font-size: 14px;
     line-height: 16px;
-    margin-left: 15px;
     }
 `
 
 export const Caution = styled.img`
     float: left;
-    margin: 6px 8px 0 0;
-    display: inline-block;
+    margin: 5px 8px 0 0;
     position: relative;
     width: 22px;
     height: 22px;

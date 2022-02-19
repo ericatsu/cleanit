@@ -1,20 +1,20 @@
 import React from 'react';
-import { MemberContainer, Image, MemberH1, Slogan, MemberRow,  MemberH2, MemberP, MemberSub, MemberColumnRight, MemberColumnLeft, FormContainer, Request, InputContainer, ButtonContainer, Input, TextArea, Button, CautionContainer, Caution } from '../elements/MemberElements';
+import { MemberContainer, Image, MemberH1, Slogan, MemberRow,  MemberH2, MemberP, FormContainer, Request, InputContainer, ButtonContainer, Input, TextArea, Button, CautionContainer, Caution, MemberColumn, MemberDescription } from '../elements/MemberElements';
 import mark from "../assets/images/mark.png"
 
 function Member() {
   return (
    <MemberContainer>
-     <MemberSub>
         <Image src="" alt="" className="image" />
         <MemberH1>CleanIt Service Limited</MemberH1>
         <Slogan>
             CUSTOMER SATISFACTION IS THE FOUNDATION OF ANY SUCCESSFUL BUSINESS
         </Slogan>
-      </MemberSub>
+      
         <MemberRow>
-            <MemberColumnRight>
-              <Request>Why Become A Member</Request>
+            <MemberColumn>
+             <MemberDescription>
+             <Request>Why Become A Member</Request>
              <MemberH2>Reduce Prices</MemberH2>
              <MemberP>CleanIt Service is a guarented to become the one best cleaning industry in country. We priotize to meet our clients highest standards. Due to our dedicated team of trained specialists, we value each and every client. We never give up on any stain and we train only the best personnel.</MemberP>
              {/* <MemberP>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit minima molestias autem, illo quo labore.</MemberP> */}
@@ -24,8 +24,9 @@ function Member() {
              <MemberH2>Re-Cleaning Guarantee</MemberH2>
              <MemberP>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit minima molestias autem, illo quo labore.</MemberP>
              <MemberP>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit minima molestias autem, illo quo labore.</MemberP>
-            </MemberColumnRight>
-            <MemberColumnLeft>
+             </MemberDescription>
+            </MemberColumn>
+            <MemberColumn>
              <FormContainer>
                <Request>Be A Member Today</Request>
                <InputContainer>
@@ -46,9 +47,10 @@ function Member() {
              </CautionContainer>
                </InputContainer>
             </FormContainer>
-            </MemberColumnLeft>
+            </MemberColumn>
             <div className="textcolumn"></div>
         </MemberRow>
+  
       </MemberContainer>
    );
 }
