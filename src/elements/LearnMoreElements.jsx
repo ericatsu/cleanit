@@ -17,16 +17,17 @@ export const Container1 = styled.div`
 export const Container = styled.div`
     padding-left: 15px;
     padding-right: 15px;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 64px;
+    /* margin-right: auto;
+    margin-left: auto; */
     
 
     @media (min-width: 992px){
-    width: 970px;
+    width: 100%;
     }
 
     @media (min-width: 768px){
-    width: 750px;
+    width: 100%;
     }
 `
 
@@ -55,35 +56,28 @@ export const Slogan = styled.h1`
 `
 
 export const AboutRow = styled.div`
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
+  margin-right: 15px;
+  margin-left: 15px;
   text-align: left;
+
+  ::after{
+    content: "";
+    display: table;
+    clear: both;
+  }
 `
 
-export const AboutColumnRight = styled.div`
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
-    padding-right: 50px;
-    background-color: blue;
+export const AboutColumn = styled.div`
     float: left;
-    padding-right: 50px;
-`
+    width: 45%;
+    padding: 15px 60px;
 
-export const AboutColumnLeft = styled.div`
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
-    padding-right: 50px;
-    background-color: blue;
-    float: left;
-    padding-left: 50px;
+    @media screen and (max-width: 600px) {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
 `
-
 
 export const AboutH2 = styled.h2`
     text-transform: none;
@@ -100,6 +94,48 @@ export const AboutP = styled.p`
     font-size: 16px;
 `
 
-export const AboutCompany = styled.div`
+export const AboutSection = styled.div`
+    margin-top: 20px;
+`
+export const AboutTitle = styled.h1`
     
+`
+export const AboutCompanyRow = styled.div`
+    margin: 0 -5px;
+
+    ::after{
+    content: "";
+    display: table;
+    clear: both;
+    }
+`
+
+export const AboutCompanyColumn = styled.div`
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+
+    @media screen and (max-width: 600px) {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+`
+
+export const AboutCard = styled.div`
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+`
+export const AboutImage = styled.img`
+    background-color: red;
+`
+
+export const AboutNaming = styled.h3`
+    background-color: gold;
+`
+
+export const AboutPosition = styled.h4`
+    background-color: green;
 `

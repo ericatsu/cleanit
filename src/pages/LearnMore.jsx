@@ -1,18 +1,17 @@
 import React from 'react';
-import {Container1 ,Container, Image, AboutH1, Slogan, AboutRow, AboutColumnRight, AboutH2, AboutP, AboutColumnLeft, AboutCompany} from '../elements/LearnMoreElements'
+import {Container1 ,Container, Image, AboutH1, Slogan, AboutRow, AboutColumnRight, AboutH2, AboutP, AboutColumnLeft,  AboutCompanyRow, AboutCompanyColumn, AboutCard, AboutSection, AboutImage, AboutNaming, AboutPosition, AboutTitle, AboutColumn} from '../elements/LearnMoreElements'
 
 function LearnMore() {
   return (
     <Container1>
       <Container>
-        <Image src="" alt="" className="image" />
+        <Image src="" alt="" />
         <AboutH1>CleanIt Service Limited</AboutH1>
         <Slogan>
             CUSTOMER SATISFACTION IS THE FOUNDATION OF ANY SUCCESSFUL BUSINESS
         </Slogan>
-       </Container>
         <AboutRow>
-            <AboutColumnRight>
+            <AboutColumn>
              <AboutH2>ABOUT US</AboutH2>
              <AboutP>CleanIt Service is a guarented to become the one best cleaning industry in country. We priotize to meet our clients highest standards. Due to our dedicated team of trained specialists, we value each and every client. We never give up on any stain and we train only the best personnel.</AboutP>
              {/* <AboutP>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit minima molestias autem, illo quo labore.</AboutP> */}
@@ -22,8 +21,8 @@ function LearnMore() {
              <AboutH2>WHAT WE OFFER</AboutH2>
              <AboutP>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit minima molestias autem, illo quo labore.</AboutP>
              <AboutP>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit minima molestias autem, illo quo labore.</AboutP>
-            </AboutColumnRight>
-            <AboutColumnLeft>
+            </AboutColumn>
+            <AboutColumn>
              <AboutH2>ABOUT US</AboutH2>
              <AboutP>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit minima molestias autem, illo quo labore.</AboutP>
              <AboutP>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit minima molestias autem, illo quo labore.</AboutP>
@@ -33,11 +32,42 @@ function LearnMore() {
              <AboutH2>WHAT WE OFFER</AboutH2>
              <AboutP>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit minima molestias autem, illo quo labore.</AboutP>
              <AboutP>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit minima molestias autem, illo quo labore.</AboutP>
-            </AboutColumnLeft>
+            </AboutColumn>
         </AboutRow>
-        <AboutCompany>
-
-        </AboutCompany>
+        </Container>
+        <AboutSection>
+          <AboutTitle>Executives</AboutTitle>
+        <AboutCompanyRow>
+        <AboutCompanyColumn>
+           <AboutCard>
+            <AboutImage src='' alt='image'/>
+            <AboutNaming>DAn</AboutNaming>
+            <AboutPosition>lkuh</AboutPosition>
+           </AboutCard>
+        </AboutCompanyColumn>
+        <AboutCompanyColumn>
+           <AboutCard>
+            <AboutImage src='' alt='image'/>
+            <AboutNaming>ER</AboutNaming>
+            <AboutPosition>asde</AboutPosition>
+           </AboutCard>
+        </AboutCompanyColumn>
+        <AboutCompanyColumn>
+           <AboutCard>
+            <AboutImage src='' alt='image'/>
+            <AboutNaming>bgh</AboutNaming>
+            <AboutPosition>kuh</AboutPosition>
+           </AboutCard>
+        </AboutCompanyColumn>
+        <AboutCompanyColumn>
+           <AboutCard>
+          <AboutImage src='' alt='image'/>
+            <AboutNaming>bgh</AboutNaming>
+            <AboutPosition>vdg</AboutPosition>
+           </AboutCard>
+        </AboutCompanyColumn>
+        </AboutCompanyRow>
+      </AboutSection>
     </Container1>
   );
 }
