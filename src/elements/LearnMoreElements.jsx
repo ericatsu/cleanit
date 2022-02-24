@@ -8,15 +8,15 @@ export const Container1 = styled.div`
     padding: 40px 0;
     margin: 15px;
 
-    &:after, :before{
+    &::after, ::before{
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
     }
 `
 
 export const Container = styled.div`
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin: 64px;
     /* margin-right: auto;
     margin-left: auto; */
@@ -39,13 +39,16 @@ export const Image = styled.img`
 `
 
 export const AboutH1 = styled.h1`
-    text-align: center;
-    display: block;
     margin: 15px 0 5px 0;
     color: #75adee;
     text-transform: none;
     font-weight: 400;
     font-size: 50px;
+
+    @media screen and (max-width: 600px) {
+        font-size: 34px;
+        line-height: 36px;
+    }
 `
 
 export const Slogan = styled.h1`
@@ -56,9 +59,9 @@ export const Slogan = styled.h1`
 `
 
 export const AboutRow = styled.div`
-  margin-right: 15px;
-  margin-left: 15px;
-  text-align: left;
+  margin-right: -15px;
+  margin-left: -15px;
+  /* text-align: left; */
 
   ::after{
     content: "";
@@ -70,10 +73,12 @@ export const AboutRow = styled.div`
 export const AboutColumn = styled.div`
     float: left;
     width: 45%;
-    padding: 15px 60px;
+    padding: 15px 30px;
+    text-align: left;
 
     @media screen and (max-width: 600px) {
     width: 100%;
+    padding: 0px;
     display: block;
     margin-bottom: 20px;
   }
