@@ -22,11 +22,11 @@ export const Container = styled.div`
     margin-left: auto; */
     
 
-    @media (min-width: 992px){
+    @media screen and (min-width: 992px){
     width: 100%;
     }
 
-    @media (min-width: 768px){
+    @media screen and (min-width: 768px){
     width: 100%;
     }
 `
