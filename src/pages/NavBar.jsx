@@ -61,7 +61,7 @@ const NavBar = ( {toggle} ) => {
             </NavItem>
         </NavMenu>
         <NavBtn>
-             <NavBtnLink to='HireMe'>Quote Now</NavBtnLink>
+             <NavBtnLink to='BookNow'>Quote Now</NavBtnLink>
          </NavBtn>
         </NavBarContainter>
      </Nav>

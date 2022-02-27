@@ -1,5 +1,5 @@
 import React from 'react'
-import { BookBody, BookContainer, BookDef, BookHeading, BookSvg, BookTel, CallDiv, TelTalk } from '../elements/BookNowElements'
+import { BookBody, BookColumn, BookContainer, BookDef, BookHeading, BookImg, BookRow, BookSvg, BookTel, BookTitle, CallDiv, ListColumn, ListRow, TelTalk, Title } from '../elements/BookNowElements'
 
 function BookNow() {
   return (
@@ -12,7 +12,31 @@ function BookNow() {
                 <BookTel href='tel: 050-088-2796'>050-088-2796</BookTel>
                 <TelTalk></TelTalk>
             </CallDiv>
-          
+            <Title>Types of Services Requested</Title>
+          <BookRow>
+              <BookColumn>
+              <ListRow>
+                  <ListColumn>
+                     
+                  </ListColumn>
+                  <ListColumn>
+                     
+                  </ListColumn>
+                  <ListColumn>
+                     
+                  </ListColumn>
+                  <ListColumn>
+                     
+                  </ListColumn>
+                  <ListColumn>
+                     
+                  </ListColumn>
+                  <ListColumn>
+                     
+                  </ListColumn>
+              </ListRow>
+              </BookColumn>
+          </BookRow>
         </BookContainer>
     </BookBody>
   )

@@ -7,6 +7,7 @@ import Member from './pages/Member';
 import NavBar from './pages/NavBar';
 import SideBar from './pages/SideBar';
 import Footer from './pages/Footer';
+import BookNow from './pages/BookNow';
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           <Route  exact path="/" component={Home} />
           <Route exact path="/LearnMore"  component={LearnMore} />
           <Route exact path="/Member"  component={Member} />
+          <Route exact path="/BookNow"  component={BookNow} />
         </Switch>
       <Footer/>
     </Router>
