@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container1 ,Container, Image, AboutH1, Slogan, AboutRow, AboutColumnRight, AboutH2, AboutP, AboutColumnLeft,  AboutCompanyRow, AboutCompanyColumn, AboutCard, AboutSection, AboutImage, AboutNaming, AboutPosition, AboutTitle, AboutColumn} from '../elements/LearnMoreElements'
+import {Container1 ,Container, Image, AboutH1, Slogan, AboutRow, AboutColumnRight, AboutH2, AboutP, AboutColumnLeft,  AboutCompanyRow, AboutCompanyColumn, AboutCard, AboutSection, AboutImage, AboutNaming, AboutPosition, AboutTitle, AboutColumn, CardText} from '../elements/LearnMoreElements'
 
 function LearnMore() {
   return (
@@ -41,29 +41,37 @@ function LearnMore() {
         <AboutCompanyColumn>
            <AboutCard>
             <AboutImage src='' alt='image'/>
+            <CardText>
             <AboutNaming>DAn</AboutNaming>
             <AboutPosition>lkuh</AboutPosition>
+            </CardText>
            </AboutCard>
         </AboutCompanyColumn>
         <AboutCompanyColumn>
            <AboutCard>
             <AboutImage src='' alt='image'/>
+            <CardText>
             <AboutNaming>ER</AboutNaming>
             <AboutPosition>asde</AboutPosition>
+            </CardText>
            </AboutCard>
         </AboutCompanyColumn>
         <AboutCompanyColumn>
            <AboutCard>
             <AboutImage src='' alt='image'/>
+            <CardText>
             <AboutNaming>bgh</AboutNaming>
             <AboutPosition>kuh</AboutPosition>
+            </CardText>
            </AboutCard>
         </AboutCompanyColumn>
         <AboutCompanyColumn>
            <AboutCard>
           <AboutImage src='' alt='image'/>
+          <CardText>
             <AboutNaming>bgh</AboutNaming>
             <AboutPosition>vdg</AboutPosition>
+            </CardText>
            </AboutCard>
         </AboutCompanyColumn>
         </AboutCompanyRow>

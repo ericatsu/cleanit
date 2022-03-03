@@ -132,11 +132,20 @@ export const AboutCard = styled.div`
   padding: 16px;
   text-align: center;
   background-color: #f1f1f1;
+
+  :hover{
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+  }
 `
 export const AboutImage = styled.img`
     background-color: red;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
 `
 
+export const CardText = styled.div`
+    padding: 2px 16px;
+`
 export const AboutNaming = styled.h3`
     background-color: gold;
 `
