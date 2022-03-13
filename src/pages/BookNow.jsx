@@ -18,21 +18,27 @@ function BookNow() {
             
                   <ListCard>
                      <BookImg/>
+                     <BookTitle>Any Name</BookTitle>
                   </ListCard>
                   <ListCard>
                      <BookImg/>
+                     <BookTitle>Any Name</BookTitle>
                   </ListCard>
                   <ListCard>
                      <BookImg/>
+                     <BookTitle>Any Name</BookTitle>
                   </ListCard>
                   <ListCard>
                      <BookImg/>
+                     <BookTitle>Any Name</BookTitle>
                   </ListCard>
                   <ListCard>
                      <BookImg/>
+                     <BookTitle>Any Name</BookTitle>
                   </ListCard>
                   <ListCard>
                      <BookImg/>
+                     <BookTitle>Any Name</BookTitle>
                   </ListCard>
               
               </BookColumn>

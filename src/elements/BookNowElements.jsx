@@ -157,10 +157,7 @@ export const BookImg = styled.img`
     margin-bottom: 10px;
 `
 
-export const BookTitle = styled.h1`
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding: 10px;
-    background-color: rgba(255, 255, 255, 0.2);
+export const BookTitle = styled.h2`
+  font-size: 1rem;
+  
 `
