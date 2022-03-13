@@ -1,5 +1,5 @@
 import React from 'react'
-import { BookBody, BookColumn, BookContainer, BookDef, BookHeading, BookImg, BookRow, BookSvg, BookTel, BookTitle, CallDiv, ListColumn, ListRow, TelTalk, Title } from '../elements/BookNowElements'
+import { BookBody, BookColumn, BookContainer, BookDef, BookHeading, BookImg, BookRow, BookSvg, BookTel, BookTitle, CallDiv, ListCard, ListRow, TelTalk, Title } from '../elements/BookNowElements'
 
 function BookNow() {
   return (
@@ -12,29 +12,29 @@ function BookNow() {
                 <BookTel href='tel: 050-088-2796'>050-088-2796</BookTel>
                 <TelTalk></TelTalk>
             </CallDiv>
-            <Title>Types of Services Requested</Title>
           <BookRow>
+            <Title>Types of Services Requested</Title>
               <BookColumn>
-              <ListRow>
-                  <ListColumn>
-                     
-                  </ListColumn>
-                  <ListColumn>
-                     
-                  </ListColumn>
-                  <ListColumn>
-                     
-                  </ListColumn>
-                  <ListColumn>
-                     
-                  </ListColumn>
-                  <ListColumn>
-                     
-                  </ListColumn>
-                  <ListColumn>
-                     
-                  </ListColumn>
-              </ListRow>
+            
+                  <ListCard>
+                     <BookImg/>
+                  </ListCard>
+                  <ListCard>
+                     <BookImg/>
+                  </ListCard>
+                  <ListCard>
+                     <BookImg/>
+                  </ListCard>
+                  <ListCard>
+                     <BookImg/>
+                  </ListCard>
+                  <ListCard>
+                     <BookImg/>
+                  </ListCard>
+                  <ListCard>
+                     <BookImg/>
+                  </ListCard>
+              
               </BookColumn>
           </BookRow>
         </BookContainer>

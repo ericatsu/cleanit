@@ -3,21 +3,22 @@ import styled from "styled-components";
 export const Container1 = styled.div`
     margin-top: 60px;
     background-color: rgb(255, 255, 255);
-    text-align: center;
+    align-items: center;
     display: block;
     padding: 40px 0;
-    margin: 15px;
+    margin: 50px;
 
-    &::after, ::before{
+    /* &::after, ::before{
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
-    }
+    } */
 `
 
 export const Container = styled.div`
     padding-left: 10px;
     padding-right: 10px;
-    margin: 64px;
+    text-align: center;
+    
     /* margin-right: auto;
     margin-left: auto; */
     

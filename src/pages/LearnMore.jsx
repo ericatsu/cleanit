@@ -5,7 +5,7 @@ function LearnMore() {
   return (
     <Container1>
       <Container>
-        <Image src="" alt="" />
+        <Image src="" alt="Image" />
         <AboutH1>CleanIt Service Limited</AboutH1>
         <Slogan>
             CUSTOMER SATISFACTION IS THE FOUNDATION OF ANY SUCCESSFUL BUSINESS
