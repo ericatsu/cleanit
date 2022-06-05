@@ -26,12 +26,12 @@ const Services = () => {
                     <ServicesH2>Others</ServicesH2>
                     <ServicesP>We offer other services as well. Lorem ipsum dolor ?</ServicesP>
                 </ServicesCard>
-                {/* <ServicesCard>
+                <ServicesCard>
                     <ServicesIcon src={webdev}/>
                     <ServicesH2>House Cleaning</ServicesH2>
                     <ServicesP>Develop a website for your businesses and organizations.</ServicesP>
                 </ServicesCard>
-                <ServicesCard>
+                {/* <ServicesCard>
                     <ServicesIcon src={appdev} />
                     <ServicesH2>Public Cleansing</ServicesH2>
                     <ServicesP>We specialize in mobile app design and development to create.</ServicesP>

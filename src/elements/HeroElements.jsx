@@ -11,7 +11,7 @@ export const HeroContainer = styled.div`
    position: relative;
    z-index: 1;
 
-   :before{
+   ::before{
        content: '';
        position: absolute;
        top: 0;
@@ -49,13 +49,14 @@ export const HeroContent = styled.div`
  padding: 8px 24px;
  display: flex;
  flex-direction: column;
- align-items: left;
+ align-items: start;
 `
 
 export const HeroH1 = styled.h1`
   color: #fff;
   font-size: 40px;
   text-align: center;
+  
 
   @media screen and (max-width: 786px){
       font-size: 40px;

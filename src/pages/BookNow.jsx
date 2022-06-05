@@ -15,7 +15,6 @@ function BookNow() {
           <BookRow>
             <Title>Types of Services Requested</Title>
               <BookColumn>
-            
                   <ListCard>
                      <BookImg/>
                      <BookTitle>Any Name</BookTitle>
@@ -43,6 +42,7 @@ function BookNow() {
               
               </BookColumn>
           </BookRow>
+          
         </BookContainer>
     </BookBody>
   )
