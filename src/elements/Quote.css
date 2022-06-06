@@ -1,8 +1,9 @@
 .whiteDivQuote{
-   padding: 40px 0 150px 0;
+   padding: 10px 0 20px 0;
    color: #fff;
    background: linear-gradient(108deg, rgb(148, 219, 243) 0%,
        rgb(252, 253, 253) 100%);
+
 
     @media screen and (max-width: 767px){
         padding: 40px 0;
@@ -10,19 +11,20 @@
 }
 
 .container{
+    background-color: rgb(78, 3, 78);
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
-    margin-left: auto;
+    /* margin-left: auto; */
     text-align: center;
 
-    @media (min-width: 992px){
-        width: 970px;
-    }
+    @media screen and (min-width: 768px){
+     height: 800px;
+ }
 
-    @media (min-width: 768px) {
-        width: 750px;
-    }
+ @media screen and (min-width: 620px){
+     height: 1300px;
+ }
 }
 
 .container::before{
@@ -35,7 +37,7 @@
     line-height: 105px;
 
     @media screen and (max-width: 1199px) {
-            font-size: 80px;
+            font-size: 10px;
             line-height: 85px;
     }
 }
@@ -54,21 +56,22 @@
 }
 
 .Form {
-    width: 720px;
-    height: 360px;
+    background-color: #f96302;
+    width: 1100px;
+    height: 350px;
     margin: 0 auto;
 }
 
-.Form-title {
+/* .Form-title {
     padding: 0 15px;
     margin-bottom: 15px;
     font-size: 24px;
     font-weight: 600;
-}
+} */
 
 .Form-sections {
     width: 100%;
-    height: 300px
+    height: 150px;
 }
 
 .Form-section {
@@ -76,7 +79,7 @@
     float: left;
     width: 33.3333%;
     height: 100%;
-    padding: 0 15px;
+    padding: 0 10px;
 }
 
 .Form-img {
@@ -85,18 +88,18 @@
 }
 
 .Form-field {
-    float: left;
+    /* float: left; */
     width: 100%;
     margin-bottom: 10px;
 }
 
-.Form-field:last-child {
+/* .Form-field:last-child {
     margin-bottom: 0;
-}
+} */
 
 .Form-input {
-    position: relative;
-    display: block;
+    /* position: relative; */
+    /* display: block; */
     width: 100%;
     height: 52px;
     font-size: 16px;
@@ -106,22 +109,14 @@
 }
 
 .Form-textarea {
-    position: relative;
-    display: block;
+    /* position: relative;
+    display: block; */
     width: 100%;
     height: 115px;
     font-size: 16px;
     padding: 6px 12px;
     border: 1px solid #ddd;
     border-radius: 4px;
-}
-
-.Form-buttonContainer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 0 15px;
 }
 
 .Form-button {
