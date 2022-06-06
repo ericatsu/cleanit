@@ -1,59 +1,63 @@
 import React from 'react';
-import '../elements/Quote.css';
 import  contactImg  from '../assets/images/contactImg.png';
+import { Caution, Form, FormField, FormInput, FormSection, FormSections, FormTextArea, Heading, HighLight, NoWrap, QuoteBtn, QuoteBtnLink, QuoteContainer, Slogan, TelNum } from '../elements/QuoteElements';
 
 function Quote() {
   return (
-  <div className="whiteDivQuote">
-  <div className="container">
-      <div className="heading">
-          <h1>How May we help You</h1>
-      </div>
-      <div className="slogan">
-        <a href="tel:050-044-8184" className="nowrap">Call Now </a>
+  <QuoteContainer>
+    <Heading>How May we help You</Heading>
+      <Slogan>
+        <NoWrap href="tel:050-044-8184">Call Now </NoWrap>
            to check availability and to request a free estimate
-      </div>
-      <div className="telNum">
-        <a href="tel:050-044-8184" className="nowrap">050-044-8184</a>
-      </div>
+      </Slogan>
+      <TelNum>
+        <NoWrap href="tel:050-044-8184">050-044-8184</NoWrap>
+      </TelNum>
       <img src={contactImg} alt='Call or Fill Up a form'></img>
-      <div className="slogan">
+      <Slogan>
+        Use the <HighLight>quick</HighLight> form below to leave your details and 
+        we will call you back in a few <HighLight>minutes</HighLight>.
+      </Slogan>
 
-      </div>
-  <form className="Form" action='#'>
-    <div className="Form-sections">
-    <div className="Form-section">
-       <div className="Form-field">
-        <input className="Form-input" type="text" name="name" placeholder="Name"/>
-      </div>
-      <div className="Form-field">
-        <input className="Form-input" type="email" name="name" placeholder="Email"/>
-      </div>
-    </div>
+  <Form action='#'>
+    <FormSections>
+    <FormSection>
+       <FormField>
+        <FormInput type="text" name="name" placeholder="Name"/>
+      </FormField>
+      <FormField>
+        <FormInput type="email" name="name" placeholder="Email"/>
+      </FormField>
+    </FormSection>
 
-    <div className="Form-section">
-      <div className="Form-field">
-        <input className="Form-input" type="tel" name="name" placeholder="Phone"/>
-      </div>
-      <div className="Form-field">
-        <input className="Form-input" type="text" name="name" placeholder="Address"/>
-      </div>
-    </div>
+    <FormSection>
+      <FormField>
+        <FormInput type="tel" name="name" placeholder="Phone"/>
+      </FormField>
+      <FormField>
+        <FormInput type="text" name="name" placeholder="Address"/>
+      </FormField>
+    </FormSection>
 
-    <div className="Form-section">
-      <div className="Form-field">
-        <textarea className="Form-textarea" type="text" name="name" placeholder="Comment / Service"/>
-      </div>
-    </div>
-  </div>
+    <FormSection>
+      <FormField>
+        <FormTextArea type="text" name="name" placeholder="Comment / Service"/>
+      </FormField>
+    </FormSection>
+  </FormSections>
+  
 
-  <div className="QuoteBtn">
-        <button to='/' className="QuoteBtnLink">Submit</button>
-  </div>
+  <FormSections>
+  <QuoteBtn>
+        <QuoteBtnLink to='/'>Submit</QuoteBtnLink>
+  </QuoteBtn>
+  </FormSections>
+   </Form>
 
-</form>
-  </div>
-  </div>
+   <Caution>
+     Your information is never sold or shared. It is used for the sole purpose of contacting you.
+   </Caution>
+  </QuoteContainer>
   );
 }
 

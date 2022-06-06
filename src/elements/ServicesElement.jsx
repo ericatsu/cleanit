@@ -84,4 +84,3 @@ export const ServicesP = styled.p`
   text-align: center;
 `
 
-

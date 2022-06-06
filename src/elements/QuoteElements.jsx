@@ -8,6 +8,10 @@ export const QuoteContainer = styled.div`
    padding-right: 15px;
    padding-left: 15px;
    text-align: center;
+
+   @media screen and (max-width: 767px){
+        padding: 40px 0;
+    }
 `
 
 export const Heading = styled.h1`
@@ -30,35 +34,39 @@ export const Slogan = styled.div`
             line-height: 20px;
     }
 `
+export const HighLight = styled.span`
+    color: #910791;
+`
 export const NoWrap = styled.a`
     
 `
 export const TelNum = styled.div`
     margin: 5px 0;
     overflow: hidden;
-    font-size: 100px;
+    font-size: 95px;
     line-height: 105px;
+
+    @media screen and (max-width: 480px) {
+            font-size: 30px;
+            line-height: 30px;
+    }
 `
 
 export const Form = styled.form`
-    width: 1100px;
-    height: 350px;
-    margin: 0 auto;
-
-    @media screen and (max-width: 768px){
-     width: 900px;
-    height: 200px;
- }
-
- @media screen and (max-width: 620px){
-     width: 1100px;
-    height: 350px;
- }
+    background-color: #641364;
+    margin-right: 10px;
+    margin-left: 10px;
 `
 
 export const FormSections = styled.div`
     width: 100%;
     height: 150px;
+
+   &::before{
+        content: " ";
+        clear: both;
+        display: table;
+    }
 `
 export const FormSection = styled.div`
     position: relative;
@@ -66,6 +74,10 @@ export const FormSection = styled.div`
     width: 33.3333%;
     height: 100%;
     padding: 0 10px;
+
+     @media screen and (min-width: 992px) {
+        width: ${props => (props.span ? props.span / 3 * 100 : "33.33")}%;
+    }
 `
 export const FormImg = styled.img`
     width: 100%;
@@ -92,7 +104,20 @@ export const FormTextArea = styled.textarea`
     border-radius: 4px;
 `
 
+export const QuoteBtn = styled.div`
+    align-items: center;
+`
 
+export const QuoteBtnLink = styled.button`
+    
 
+    
+`
+
+export const Caution = styled.div`
+    font-style: italic;
+    text-align: center;
+    top: 4px;
+`
 
 
