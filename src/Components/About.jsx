@@ -1,42 +1,40 @@
-import { Button } from "../elements/ButtonElements"
-import { InfoContainer, InfoWrapper, InfoRow,
- Column1, TextWrapper, TopLine, Heading, Subtitle,
- BtnWrap, Column2, ImgWrap, Img } from "../elements/AboutElements"
- import hello from "../assets/images/hello.svg"
+import React from 'react';
+import about01 from '../assets/images/about01.png';
+import about02 from '../assets/images/about02.png';
+import about03 from '../assets/images/about03.png';
+import about04 from '../assets/images/about04.png';
+import { Profiles, ProfileItem, HeadText, BoldText, PText } from '../elements/AboutElements'
 
-const About = ({lightBg, id, imgStart,topLine,lightText, headline,darkText,description,buttonLabel,img, alt, primary, dark, dark2}) => {
-    return (
-        <InfoContainer lightBg={lightBg} id={id}>
-            <InfoWrapper>
-                <InfoRow imgStart={imgStart}>
-                    <Column1>
-                    <TextWrapper>
-                        <TopLine>{topLine}</TopLine>
-                        <Heading lightText={lightText}>{headline}</Heading>
-                        <Subtitle darkText={darkText}>{description}</Subtitle>
-                        <BtnWrap>
-                            <Button to='LearnMore' //A page for About Us
-                            smooth={true}
-                            duration={500}
-                            spy={true}
-                            exact="true"
-                            offset={-80}
-                            primary={primary ? 1 : 0}
-                            dark={dark ? 1 : 0}
-                            dark2={dark2 ? 1 : 0}
-                            >{buttonLabel}</Button>
-                        </BtnWrap>
-                    </TextWrapper>
-                    </Column1>
-                    <Column2>
-                      <ImgWrap>
-                      <Img src={hello} alt={alt}/>
-                      </ImgWrap>
-                    </Column2>
-                </InfoRow>
-            </InfoWrapper>
-        </InfoContainer>
-    )
+//Array for what will be on about page
+const abouts = [
+  { title: 'Mission & Vission', description: 'The Company mission', imgUrl: about01},
+  { title: 'Mission & Vission', description: 'The Company mission', imgUrl: about02},
+  { title: 'Mission & Vission', description: 'The Company mission', imgUrl: about03},
+  { title: 'Mission & Vission', description: 'The Company mission', imgUrl: about04}
+]
+
+const About = () => {
+  return (
+    <>
+    <HeadText>About Us</HeadText>
+    <Profiles>
+      {
+        abouts.map((about, index) => (
+          <ProfileItem
+          whileInView={{ opacity: 1}}
+          whileHover={{ scale: 1.1 }}
+          transition= {{ duration: 0.5, type: 'tween'}}
+          key={about.title + index}
+          >
+           <img src={about.imgUrl} alt={about.title} />
+           <BoldText className="bold-text" style={{ marginTop: 20 }}>{about.title}</BoldText>
+           <PText className="p-text" style={{ marginTop: 10 }}>{about.description}</PText>
+          </ProfileItem>
+        ))
+      }
+    </Profiles>
+    </>
+  )
 }
 
 export default About

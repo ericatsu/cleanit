@@ -1,95 +1,76 @@
 import styled from "styled-components";
+import { motion } from 'framer-motion';
 
-export const InfoContainer = styled.div`
-  color: #fff;
-  background: ${({ lightBg }) => (lightBg ? '#f9f9f9' : '#010606')};
+export const HeadText = styled.h2`
+   font-size: 2.75rem;
+  font-weight: 800;
+  text-align: center;
+  color: #7d0588;
+  text-transform: capitalize;
 
-  @media screen and (max-width: 786px) {
-      padding: 100px 0;
+  @media screen and (min-width: 2000px) {
+    font-size: 4rem;
+  }
+
+  @media screen and (max-width: 450px) {
+    font-size: 2rem;
   }
 `
 
-export const InfoWrapper = styled.div`
-  display: grid;
-  z-index: 1;
-  height: 700px;
-  width: 100%;
-  max-width: 1100px;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 0 24px;
+export const Profiles = styled.div`
+  display: flex;
   justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 1rem;
 `
 
-export const InfoRow = styled.div`
-  display: grid;
-  grid-auto-columns: minmax(auto, 1fr);
-  align-items: center;
-  grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'`)};
-
-  @media screen and (max-width: 768px){
-    grid-template-areas: ${({ imgStart }) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)};
-  }
-`
-
-export const Column1 = styled.div`
-  margin-bottom: 15px;
-  padding: 0 15px;
-  grid-area: col1;
-`
-export const Column2 = styled.div`
-  margin-bottom: 15px;
-  padding: 0 15px;
-  grid-area: col2;
-`
-
-export const TextWrapper = styled.div`
-  max-width: 540px;
-  padding-top: 0;
-  padding-bottom: 60px;
-`
-
-export const TopLine = styled.p`
-  color: #3598FF;
-  font-size: 18px;
-  line-height: 16px;
-  font-weight: 700;
-  letter-spacing: 1.4px;
-  text-transform: uppercase;
-  margin-bottom: 16px;
-`
-
-export const Heading = styled.h1`
-  margin-bottom: 22px;
-  font-size: 48px;
-  line-height: 1.1;
-  font-weight: 600;
-  color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#010606')};
-
-   @media screen and (max-width: 480px){
-   font-size: 32px;
-}
-`
-export const Subtitle = styled.p`
-  max-width: 440px;
-  margin-bottom: 35px;
-  font-size: 19px;
-  line-height: 24px;
-  color: ${({ darkText }) => (darkText ? '#010606' : '#fff')};
-`
-
-export const BtnWrap = styled.div`
+export const ProfileItem = styled(motion.div)`
+  width: 190px;
   display: flex;
   justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 2rem;
+
+  img {
+    width: 100%;
+    height: 170px;
+    border-radius: 15px;
+    object-fit: cover;
+  }
+
+  @media screen and (min-width: 2000px) {
+    width: 370px;
+    margin: 2rem 4rem;
+
+    img {
+      height: 320px;
+    }
+  }
 `
 
-export const ImgWrap = styled.div`
-  max-width: 555px;
-  height: 100%;
-`
+export const BoldText = styled.h2`
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--black-color);
+  text-align: left;
 
-export const Img = styled.img`
-  width: 100%;
-  margin: 0 0 10px 0;
-  padding-right: 0;
+  @media screen and (min-width: 2000px) {
+    font-size: 2rem;
+  }
+
+  @media screen and (max-width: 450px) {
+    font-size: 0.9rem;
+  }
+`
+export const PText = styled.p`
+  font-size: 0.8rem;
+  text-align: left;
+  color: var(--gray-color);
+  line-height: 1.5;
+
+  @media screen and (min-width: 2000px) {
+    font-size: 1.75rem;
+  }
 `

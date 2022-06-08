@@ -3,6 +3,7 @@ import {FaBars} from 'react-icons/fa'
 import { Nav, NavBarContainter, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink, NavResume} from '../elements/NavBarElements';
 import { IconContext } from 'react-icons/lib';
 import { animateScroll as scroll } from 'react-scroll';
+import  logo  from '../assets/images/logo.png';
 
 const NavBar = ( {toggle} ) => {
 
@@ -29,7 +30,10 @@ const NavBar = ( {toggle} ) => {
     <IconContext.Provider value={{color: '#ffffff'}}>
      <Nav scrollNav={scrollNav}>
         <NavBarContainter>
-        <NavLogo to="/" onClick={toggleHome}>CleanIt</NavLogo>
+        <NavLogo to="/" onClick={toggleHome}>
+            {/* Name and Logo of brand */}
+            <img src={logo} alt='logo' />
+            </NavLogo>
         <MobileIcon onClick={toggle}>
             <FaBars />
         </MobileIcon >
