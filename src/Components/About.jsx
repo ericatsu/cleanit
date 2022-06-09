@@ -27,8 +27,8 @@ const About = () => {
           key={about.title + index}
           >
            <img src={about.imgUrl} alt={about.title} />
-           <BoldText className="bold-text" style={{ marginTop: 20 }}>{about.title}</BoldText>
-           <PText className="p-text" style={{ marginTop: 10 }}>{about.description}</PText>
+           <BoldText  style={{ marginTop: 20 }}>{about.title}</BoldText>
+           <PText  style={{ marginTop: 10 }}>{about.description}</PText>
           </ProfileItem>
         ))
       }
