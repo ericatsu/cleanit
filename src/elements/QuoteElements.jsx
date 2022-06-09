@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const QuoteContainer = styled.div`
-   padding: 10px 0 20px 0;
+   
    color: #fff;
    background: linear-gradient(108deg, rgb(128, 203, 228) 0%,
        rgb(252, 253, 253) 100%);
@@ -9,9 +9,9 @@ export const QuoteContainer = styled.div`
    padding-left: 15px;
    text-align: center;
 
-   @media screen and (max-width: 767px){
+   /* @media screen and (max-width: 767px){
         padding: 40px 0;
-    }
+    } */
 `
 
 export const Heading = styled.h1`

@@ -5,8 +5,8 @@ export const MemberContainer = styled.div`
     background-color: rgb(255, 255, 255);
     text-align: center;
     display: block;
-    padding: 40px 0;
-    margin: 30px;
+    /* padding: 40px 0; */
+    /* margin: 30px; */
     flex-direction: column;
 
     
