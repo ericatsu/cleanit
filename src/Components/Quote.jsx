@@ -1,6 +1,8 @@
 import React from 'react';
 import  contactImg  from '../assets/images/contactImg.png';
-import { Caution, Form, FormField, FormInput, FormSection, FormSections, FormTextArea, Heading, HighLight, NoWrap, QuoteBtn, QuoteBtnLink, QuoteContainer, Slogan, TelNum } from '../elements/QuoteElements';
+import { BtnSection, Caution , Form, FormField, FormInput, FormSection,  FormTextArea, Heading, HighLight, NoWrap, QuoteBtn, QuoteBtnLink, QuoteContainer, Slogan, TelNum } from '../elements/QuoteElements';
+import {CgDanger} from 'react-icons/cg'
+
 
 function Quote() {
   return (
@@ -43,14 +45,17 @@ function Quote() {
         <FormTextArea type="text" name="name" placeholder="Comment / Service"/>
       </FormField>
     </FormSection>
-  </Form>
-
+  
+  <BtnSection>
   <QuoteBtn>
-        <QuoteBtnLink to='/'>Submit</QuoteBtnLink>
+        <QuoteBtnLink to='/'>Send</QuoteBtnLink>
   </QuoteBtn>
+  </BtnSection>
+</Form>
 
- <Caution>
-     Your information is never sold or shared. It is used for the sole purpose of contacting you.
+   <Caution > 
+    <CgDanger/>
+     Your information is never sold or shared. It is used for the sole purpose of contacting you     
    </Caution>
   </QuoteContainer>
   );

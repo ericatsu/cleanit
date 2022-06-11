@@ -95,19 +95,47 @@ export const FormTextArea = styled.textarea`
     border: 1px solid #ddd;
     border-radius: 4px;
 `
+export const  BtnSection = styled.div`
+    height: 100%;
+    padding: 0 50px;
+    width: 100%;
+    align-items: center;
 
+    @media screen and (max-width: 800px) {
+     width: 100%;
+    }
+`
 export const QuoteBtn = styled.div`
+    margin: 15px 0 15px 0;
     align-items: center;
 `
 
 export const QuoteBtnLink = styled.button`
-       
+    background: linear-gradient(360deg, rgb(255, 255, 255) 0%,
+       rgb(232, 240, 221) 100%);
+    height: 75px;
+    width: 30%;
+    max-width: 400px;
+    color: rgb(128, 203, 228);
+    font-size: 40px;
+    border-radius: 45px;
+    border: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 300;
+    cursor: pointer;
+
+    @media screen and (max-width: 800px) {
+     width: 90%;
+     font-size: 35px;
+    }
 `
 
 export const Caution = styled.div`
+    display: inline-block;
+    position: relative;
     font-style: italic;
     text-align: center;
     top: 4px;
+    margin: 0 0 30px 0;
 `
-
-
