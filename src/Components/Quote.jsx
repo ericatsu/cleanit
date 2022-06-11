@@ -20,7 +20,6 @@ function Quote() {
       </Slogan>
 
   <Form action='#'>
-    <FormSections>
     <FormSection>
        <FormField>
         <FormInput type="text" name="name" placeholder="Name"/>
@@ -44,17 +43,13 @@ function Quote() {
         <FormTextArea type="text" name="name" placeholder="Comment / Service"/>
       </FormField>
     </FormSection>
-  </FormSections>
-  
+  </Form>
 
-  <FormSections>
   <QuoteBtn>
         <QuoteBtnLink to='/'>Submit</QuoteBtnLink>
   </QuoteBtn>
-  </FormSections>
-   </Form>
 
-   <Caution>
+ <Caution>
      Your information is never sold or shared. It is used for the sole purpose of contacting you.
    </Caution>
   </QuoteContainer>

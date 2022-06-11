@@ -34,8 +34,7 @@ const Services = () => {
                     transition= {{ duration: 0.5, type: 'tween'}}
                     key={service.title + index}
                     >
-                        {/* Put call and quote icons on image when hover */}
-                    <img src={service.imgUrl} alt={service.title} />
+                   <img src={service.imgUrl} alt={service.title} />
                    <BoldText style={{ marginTop: 20 }}>{service.title}</BoldText>
                    <PText  style={{ marginTop: 10 }}>{service.description}</PText>
                  </ServiceProfilesItem>

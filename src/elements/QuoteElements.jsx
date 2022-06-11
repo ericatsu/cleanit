@@ -1,17 +1,12 @@
 import styled from 'styled-components';
 
 export const QuoteContainer = styled.div`
-   
    color: #fff;
    background: linear-gradient(108deg, rgb(128, 203, 228) 0%,
        rgb(252, 253, 253) 100%);
    padding-right: 15px;
    padding-left: 15px;
    text-align: center;
-
-   /* @media screen and (max-width: 767px){
-        padding: 40px 0;
-    } */
 `
 
 export const Heading = styled.h1`
@@ -53,30 +48,27 @@ export const TelNum = styled.div`
 `
 
 export const Form = styled.form`
-    background-color: #641364;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
     margin-right: 10px;
     margin-left: 10px;
+    margin-top: 5px;
+    padding-top: 20px;
+
+    @media screen and (max-width: 800px) {
+    flex-direction: column;
+    align-items: stretch;
+    } 
 `
 
-export const FormSections = styled.div`
-    width: 100%;
-    height: 150px;
-
-   &::before{
-        content: " ";
-        clear: both;
-        display: table;
-    }
-`
 export const FormSection = styled.div`
-    position: relative;
-    float: left;
-    width: 33.3333%;
     height: 100%;
-    padding: 0 10px;
+    padding: 0 15px;
+    width: 33.33%;
 
-     @media screen and (min-width: 992px) {
-        width: ${props => (props.span ? props.span / 3 * 100 : "33.33")}%;
+    @media screen and (max-width: 800px) {
+     width: 100%;
     }
 `
 export const FormImg = styled.img`
@@ -109,9 +101,7 @@ export const QuoteBtn = styled.div`
 `
 
 export const QuoteBtnLink = styled.button`
-    
-
-    
+       
 `
 
 export const Caution = styled.div`
