@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from 'react'
+import React from 'react';
 import { BoldText, PText, ServiceProfiles, ServiceProfilesItem, ServicesContainer, ServicesH1 } from '../elements/ServicesElement'
 import about01 from '../assets/images/about01.png';
 import about02 from '../assets/images/about02.png';
