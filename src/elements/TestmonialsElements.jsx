@@ -1,66 +1,42 @@
 import styled from "styled-components";
 
-export const Cont = styled.div`
-    
+export const Testimonial = styled.section`
+  
 `
 
 export const TestiContainer = styled.div`
-  width: 60%;
-  min-height: 320px;
-  background-color: var(--white-color);
-  display: flex;
-  flex-direction: row;
-  padding: 2rem;
-  border-radius: 15px;
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
-
-  transition: all 0.3s ease-in-out;
-
-  img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-
-  @media screen and (min-width: 2000px) {
-    min-height: 450px;
-
-    img {
-      width: 150px;
-      height: 150px;
-    }
-  }
-
-  @media screen and (max-width: 850px) {
-    width: 100%;
-  }
-
-  @media screen and (max-width: 600px) {
-    flex-direction: column;
-  }
+  /* max-width: 1000px; */
+  position: relative;
+  margin: auto;
+  background: #0c0c0c;
 `
-export const TestiFlex = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+export const TestiHead = styled.div`
+  
+`
+
+export const TestiBg = styled.div`
+  
+`
+
+export const ImgBg = styled.img`
+  width:100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  background: #232a34;
 `
 
 export const TestiContent = styled.div`
-  flex: 1;
-  height: 100%;
-  padding: 0 2rem;
-  text-align: left;
-
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-start;
-
-  @media screen and (max-width: 600px) {
-    margin-top: 2rem;
-    padding: 0;
-  }
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-name: fade;
+  animation-duration: 1.5s;
+  opacity: 0.4 to 1;
+  text-align: center;
 `
 
 export const TestiFeedback = styled.p`
@@ -77,7 +53,9 @@ export const TestiFeedback = styled.p`
 export const TestiName = styled.h4`
     font-weight: 600;
     color: #5959e6;
-    margin-top: 2rem;
+    margin-top: 8rem;
+    position: absolute;
+    margin: 8rem 16rem 0rem 16rem;
 `
 
 export const TestiLoc = styled.h5`
@@ -86,43 +64,41 @@ export const TestiLoc = styled.h5`
     margin-top: 5px;
 `
 
+export const TestiPrev = styled.button`
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 
-export const TestiBtns = styled.div`
-  flex-direction: row;
-  margin-top: 1rem;
-
-  div {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: var(--white-color);
-
-    margin: 1rem;
-    transition: all 0.3s ease-in-out;
-
-    svg {
-      width: 20px;
-      height: 20px;
-      color: var(--secondary-color);
-    }
-
-    &:hover {
-      background-color: var(--secondary-color);
-
-      svg {
-        color: var(--white-color);
-      }
-    }
-
-    @media screen and (min-width: 2000px) {
-      width: 100px;
-      height: 100px;
-
-      svg {
-        width: 45px;
-        height: 45px;
-      }
-    }
+  &:hover{
+    background-color: rgba(0,0,0,0.8);
   }
 `
 
+export const TestiNext = styled.button`
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 3px 0 0 3px;
+  user-select: none;
+  right: 0;
+
+  &:hover{
+    background-color: rgba(0,0,0,0.8);
+  }
+`
