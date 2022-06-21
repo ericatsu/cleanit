@@ -32,7 +32,7 @@ const NavBar = ( {toggle} ) => {
         <NavBarContainter>
         <NavLogo to="/" onClick={toggleHome}>
             {/* Name and Logo of brand */}
-            <img src={logo} alt='logo' />
+            <img src="{}" alt='logo' />
             </NavLogo>
         <MobileIcon onClick={toggle}>
             <FaBars />
